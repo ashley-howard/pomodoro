@@ -124,6 +124,8 @@ function updateSettings() {
         countdown.innerText = `${pomodoroTime.value}:00`;
     }
     counter = 0;
+    clearInterval(interval);
+    // resetTimer();
 }
 
 function resetSettings() {
@@ -131,4 +133,5 @@ function resetSettings() {
     shortBreakTime.value = 5;
     longBreakTime.value = 10;
     counter = 0;
+    resetTimer();
 }
