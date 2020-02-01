@@ -1,0 +1,8 @@
+#countdown {
+    font-size: 10em;
+}
+
+input[type=number] {
+    width: 50px;
+    padding: 5px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Pomodoro</title>
+</head>
+
+<body>
+
+    <p>Settings (in minutes):</p>
+    <!-- Pomodoro: <input type="number" id="minutes-input" value="25" min="1" oninput="updateTimer()" placeholder="25"> -->
+    Pomodoro: <input type="number" id="pomodoro" value="25" min="1" placeholder="25">
+    Short break: <input type="number" id="short-break" value="5" min="1" placeholder="5">
+    Long break: <input type="number" id="long-break" value="10" min="1" placeholder="10">
+    <button onclick="saveSettings()">Save</button>
+    <button onclick="resetSettings()">Reset</button>
+    <br><br>
+    <div id="countdown"></div>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="pauseTimer()">Pause</button>
+    <button onclick="resetTimer()">Reset</button>
+    <br><br>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
