@@ -13,11 +13,12 @@
 
     <p>Settings (in minutes):</p>
     <!-- Pomodoro: <input type="number" id="minutes-input" value="25" min="1" oninput="updateTimer()" placeholder="25"> -->
-    Pomodoro: <input type="number" id="pomodoro-input" value="25" min="1" placeholder="25"
-        oninput="saveSettings()">
-    Short break: <input type="number" id="short-break-input" value="5" min="1" placeholder="5">
-    Long break: <input type="number" id="long-break-input" value="10" min="1" placeholder="10">
-    <button onclick="saveSettings()">Save</button>
+    Pomodoro: <input type="number" id="pomodoro-input" value="25" min="1" placeholder="25" oninput="updateSettings()">
+    Short break: <input type="number" id="short-break-input" value="5" min="1" placeholder="5"
+        oninput="updateSettings()">
+    Long break: <input type="number" id="long-break-input" value="10" min="1" placeholder="10"
+        oninput="updateSettings()">
+    <!-- <button onclick="updateSettings()">Save</button> -->
     <button onclick="resetSettings()">Reset</button>
     <br><br>
     <div id="countdown"></div>

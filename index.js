@@ -92,16 +92,11 @@ function resetTimer() {
     updateTimer();
 }
 
-function saveSettings() {
-    if (Number.isInteger(+pomodoroTime.value) && Number.isInteger(+shortBreakTime.value) && Number.isInteger(+longBreakTime.value)) {
-        // pomodoro
-        countdown.innerText = `${pomodoroTime.value}:00`;
-        // short break
-
-        // long break
-
-    } else {
+function updateSettings() {
+    if (!Number.isInteger(+pomodoroTime.value) || !Number.isInteger(+shortBreakTime.value) || !Number.isInteger(+longBreakTime.value)) {
         window.alert("please enter an integer")
+    } else {
+        countdown.innerText = `${pomodoroTime.value}:00`;
     }
 }
 
