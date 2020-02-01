@@ -95,6 +95,7 @@ function resetTimer() {
     console.log('timer reset')
     clearInterval(interval);
     updateSettings();
+    paused = false;
     counter = 0;
 }
 
