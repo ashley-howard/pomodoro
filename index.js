@@ -1,5 +1,3 @@
-// Bugs:
-
 const pomodoroTime = document.getElementById("pomodoro-input");
 const shortBreakTime = document.getElementById("short-break-input");
 const longBreakTime = document.getElementById("long-break-input");
@@ -14,22 +12,7 @@ var interval;
 var paused;
 
 function pomodoro() {
-    // if (paused === true) {
-    //     console.log("timer unpaused")
-    //     paused = false;
-    //     interval = setInterval(function () {
-    //         seconds--;
-    //         countdown.innerText = `${(minutes = Math.floor(seconds / 60))}:${seconds -
-    //             minutes * 60}`;
-    //         if (!seconds) {
-    //             clearInterval(interval);
-    //             shortBreak()
-    //         }
-    //     }, 1000);
-    // }
-
     if (counter < 3) {
-
         if (paused === true) {
             console.log("timer unpaused")
             paused = false;
@@ -90,7 +73,6 @@ function longBreak() {
         seconds--;
         countdown.innerText = `${(minutes = Math.floor(seconds / 60))}:${seconds -
             minutes * 60}`;
-        // console.log(seconds)
         if (!seconds) {
             clearInterval(interval);
             counter = 0;
@@ -124,7 +106,6 @@ function updateSettings() {
     }
     counter = 0;
     clearInterval(interval);
-    // resetTimer();
 }
 
 function resetSettings() {
