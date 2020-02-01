@@ -1,5 +1,4 @@
 // Bugs:
-// - Pause doesn't work
 
 const pomodoroTime = document.getElementById("pomodoro-input");
 const shortBreakTime = document.getElementById("short-break-input");
